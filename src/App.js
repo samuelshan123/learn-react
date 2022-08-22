@@ -1,7 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import Name from './Name';
 
+
+//Class component with props
 class Test extends React.Component{
   render(){
    return(
@@ -9,10 +12,14 @@ class Test extends React.Component{
    )
   }
 }
-
+//function component with props
 function Function(props){
   return(
+    <div>
     <h1>hi from {props.name}</h1>
+    <Name name="samuel"></Name>
+    </div>
+
   )
 }
 
