@@ -1,4 +1,8 @@
 import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import Name from "./Name";
+import Navigate from "./Navigate";
+import './index.css';
 
 export default class ApiCall extends React.Component{
      btn="click"
@@ -38,6 +42,13 @@ export default class ApiCall extends React.Component{
 
         <input placeholder="type" id="ip"/>
         <button onClick={this.insert}>insert</button>
+
+        <br></br>
+      
+       <Link to={'/navigate'}>
+        vaviaget
+       </Link>
+        {/* <button onClick={window.location.href='/navigate'}>Navigate</button> */}
 
         </div>
     )
